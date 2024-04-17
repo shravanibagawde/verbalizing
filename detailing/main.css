@@ -1,0 +1,258 @@
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+/*    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;*/
+    cursor: default;
+}
+
+::selection {
+  color: white;
+  background: red;
+}
+
+.eb-garamond-ebf {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.eb-garamond-ebf {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.tiro-devanagari marathi-regular {
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tiro-devanagari marathi-regular-italic {
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+a, a:visited {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  /*font-style: italic;*/
+  /*color: #FFBEBE;*/
+  color: black;
+}
+
+.img-h {
+  height: 0.5rem;
+}
+
+.img-v {
+  height: 0.5rem;
+  transform: rotate(90deg);
+}
+
+body {
+  font-family: 'EB Garamond';
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: red;
+  overflow: hidden;
+}
+
+marquee {
+  margin-top: 0.1rem;
+  position: relative;
+  width: 2rem;
+  display: inline-block;
+  font-size: 0.65rem;
+}
+
+.it {
+  font-style: italic;
+}
+
+.ma {
+  font-family: "Tiro Devanagari Marathi";
+  font-size: 0.65rem;
+}
+
+/*FRAME*/
+
+.frame-top {
+  position: fixed;
+  width: fit-content;
+}
+
+.frame-right {
+  position: fixed;
+  writing-mode: vertical-rl;
+  width: fit-content;
+}
+
+.frame-bottom {
+  position: fixed;
+  transform: rotate(180deg);
+  width: fit-content;
+}
+
+.frame-left {
+  position: fixed;
+  transform: rotate(-180deg);
+  width: fit-content;
+  writing-mode: vertical-rl;
+}
+
+.frame0{
+  z-index: 60;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 28.25rem;
+  height: 13.25rem;
+  /*border: 0.25px solid lightgrey;*/
+}
+
+.frame1{
+  z-index: 50;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 15rem;
+  /*border: 0.25px solid lightgrey;*/
+}
+
+.frame2{
+  z-index: 40;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 31.75rem;
+  height: 16.75rem;
+  /*border: 0.25px solid lightgrey;*/
+}
+
+.frame3{
+  z-index: 30;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 33.5rem;
+  height: 18.5rem;
+  /*border: 0.25px solid lightgrey;*/
+}
+
+.frame4 {
+  z-index: 20;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 35.25rem;
+  height: 20.25rem;
+  /*border: 0.25px solid lightgrey;*/
+}
+
+.frame5 {
+  z-index: 10;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 37rem;
+  height: 22rem;
+  /*border: 0.25px solid lightgrey;*/
+}
+
+.anim0 {
+  animation: blink 3s infinite;
+  animation-timing-function: steps(3, jump-none);
+}
+
+.anim1 {
+  animation: blink 0.4s infinite;
+  animation-timing-function: steps(3, jump-none);
+}
+
+.anim2 {
+  animation: blink 0.65s infinite;
+  animation-timing-function: steps(3, jump-none);
+}
+
+.anim3 {
+  animation: blink 0.9s infinite;
+  animation-timing-function: steps(3, jump-none);
+}
+
+.anim4 {
+  animation: blink 1.6s infinite;
+  animation-timing-function: steps(3, jump-none);
+}
+
+.anim5 {
+  animation: blink 1.4s infinite;
+  animation-timing-function: steps(3, jump-none);
+}
+
+
+
+/*SEGMENTS*/
+
+/*#s2 {
+  color: #2F2F2F;
+  animation: color-change1 2s infinite;
+  animation-timing-function: steps(3, jump-none);
+}*/
+
+
+/*ANIMATIONsS*/
+
+@keyframes color-change1 {
+  0% { color: blue; }
+  33% { color: red; }
+  66% { color: blue; }
+  100% { color: red; }
+}
+
+@keyframes color-change1 {
+  0% { color: blue; }
+  33% { color: red; }
+  66% { color: blue; }
+  100% { color: red; }
+}
+
+@keyframes blink {
+  0% { visibility: hidden; }
+  100% { visibility: visible;  }
+}
+
+@keyframes shadow {
+  0% {text-shadow: 2px 2px 4px white;}
+  50% {text-shadow: 2px 2px 3px aqua;}
+  100% {text-shadow: 2px 2px 4px white;}
+}
+

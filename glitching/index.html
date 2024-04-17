@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="db-wb.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Glitching...</title>
+</head>
+<body>
+
+<div class="video">
+    <video autoplay loop muted>
+        <source src="glitching.mp4" type="video/mp4">
+    </video>
+</div>
+
+<button id="asterisk" type="button">✼</button>
+<section class="wrapper">
+	<div class="line line1">Glitching... is a montage archiving accidents and errors</div>
+	<div class="line line2">encountered on Google Maps.</div>
+	<br>
+	<div class="line line3">If you've happened to find any,</div>
+	<div class="line line4">feel free to add their coordinates to <a target="popup" onclick="window.open('https://docs.google.com/spreadsheets/d/1xn1lAPAkz24UijBgZU-EnlRhRI6wKoVHDqmcv-PEj50/edit?usp=sharing','popup','width=700,height=600,top=100,left=200,scrollbars=no,resizable=yes'); return false;">this spreadsheet</a>.</div>
+	<br>
+	<div class="line line5">Click here for readings</div>
+	<div class="line line6">and additional information.</div>
+</section>
+
+
+<script type="text/javascript">
+function animateTitle() {
+i >= message.length - 1 ? (i = 0) : i++,
+(document.title = message[i]),
+setTimeout('animateTitle()', 300)
+}
+var message = [
+'Glitching', 'Glitching.',
+'Glitching..', 'Glitching...', 'Glitching..', 'Glitching.', 'Glitching']
+i = 0
+animateTitle()
+
+const wrapper = document.querySelector('section');
+const content = document.querySelector('body')
+const toggleAsterisk = document.getElementById('asterisk');
+
+
+function toggleShow() {
+            wrapper.classList.toggle('show');
+            wrapper.classList.toggle('wrapper');
+}
+
+toggleAsterisk.addEventListener('click', toggleShow);
+
+</script>
+</body>
+</html>

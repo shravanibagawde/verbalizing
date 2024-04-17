@@ -1,0 +1,91 @@
+@font-face { 
+font-family: "Arial Narrow"; 
+src: url('arial_narrow.ttf') format('truetype'); 
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
+a, a:active, a:visited {
+	color: white;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Arial Narrow";
+	color: white;
+	background: black;
+	font-weight: 800;
+}
+
+video {
+	width: 60%;
+	height: auto;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+}
+
+#asterisk {
+	z-index: 99;
+	border: none;
+	font-size: 0.85em;
+	padding: 0;
+	cursor: pointer;
+	color: white;
+	font-size: 1.25em;
+	background: black;
+	position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+	padding-left: 0.15em;
+	padding-right: 0.15em;
+}
+
+.wrapper {
+  display: none;
+}
+
+.show {
+  z-index: 10;
+  font-size: .95em;
+  position: fixed;
+  top: 75%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);  z-index: 99999;
+  overflow-y:scroll;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  padding: 0.15em;
+  color: white;
+  background: black;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+body {
+	background-image: url("assets/main-text-new.png");
+	background-repeat: no-repeat;
+	background-size: 145%;
+	background-position: 89% 42.5%;
+	font-size: 1.05em;
+	letter-spacing: 0.05em;
+	/*overflow: hidden;*/
+}
+
+a, a:visited {
+	color: black;
+	width: fit-content;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}
+
+#detail-slip, #query-slip, #glitch-slip, #void-slip{
+	position: absolute;
+	width: 20%;
+	filter: saturate(1.5);
+}
+
+#glitch-slip {
+	position: absolute;
+	width: 25%;
+	filter: saturate(1.5);
+}
+
+.slip {
+	cursor: pointer;
+}
+
+.slip:active {
+	cursor: grabbing;
+}
+
+
