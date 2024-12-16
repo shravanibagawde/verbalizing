@@ -1,0 +1,145 @@
+html  {
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 1rem;
+  font-size: 1.15em;
+  background: black;
+  color: white;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
+  @font-face {
+  font-family: "Arial Black";
+  font-style: normal;
+  src: url("../assets/arialmtblack.ttf")
+}
+
+@font-face {
+  font-family: "Arial Narrow";
+  font-style: normal;
+  src: url("../assets/arialmtnarrow.ttf")
+}
+
+.a-black {
+	font-family: "Arial Black";
+	font-size: 0.85em;
+	letter-spacing: -0.015em;
+	line-height: 1em;
+}
+
+.a-narrow {
+	font-family: "Arial Narrow";
+}
+
+.t1 {
+	position: fixed;
+	z-index: 100;
+	width: 15rem;
+}
+
+a:visited, a, a:active {
+color: white;
+text-decoration: none;
+/*text-decoration-style: dotted;
+text-decoration-thickness: 5%;*/
+transition: 0.2s;
+}
+
+a:hover {
+color: gray;
+text-decoration: none;
+}
+
+
+.container {
+	display: flex;
+	gap: 3rem;
+}
+
+.matter-container {
+	width: 17.5rem;
+}
+
+.text-container {
+	text-align: left;
+	font-size: 1.5em;
+	width: 40rem;
+	text-justify: inter-word;
+	overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+img, video {
+	width: inherit;
+}
+
+.image-container {
+	position: relative;
+  text-align: center;
+  width: inherit;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#image1 {
+  padding-top: 0em;
+}
+
+figcaption {
+	text-align: center;
+	padding-top: 1em;
+	padding-left: 4em;
+	padding-right: 4em;
+	font-family: Times New Roman;
+	font-size: 0.60em;
+}
+
+.note {
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+#title {
+	padding: 5px;
+  position: absolute;
+  top: 42.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: black;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+@media only screen and (max-width: 735px) {
+
+.t1, .t2 {
+	position: relative;
+	z-index: 100;
+	width: 15rem;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.text-container {
+	text-align: left;
+	width: 100%;
+	margin-top: 4em;
+}
+
+}
