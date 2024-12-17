@@ -3,13 +3,13 @@ html  {
   -moz-osx-font-smoothing: grayscale;
   padding: 1rem;
   font-size: 1.15em;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 }
 
 ::selection {
-  color: black;
-  background: white;
+  color: white;
+  background: black;
 }
 
   @font-face {
@@ -42,7 +42,9 @@ html  {
 }
 
 a:visited, a, a:active {
-color: white;
+color: blue;
+/*padding-bottom: 0.15px;
+border-bottom: 1px solid #575353;*/
 text-decoration: none;
 /*text-decoration-style: dotted;
 text-decoration-thickness: 5%;*/
@@ -50,7 +52,7 @@ transition: 0.2s;
 }
 
 a:hover {
-color: gray;
+color: lightgrey;
 text-decoration: none;
 }
 
