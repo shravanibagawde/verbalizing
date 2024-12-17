@@ -188,7 +188,7 @@ marquee {
   /*border: 0.25px solid lightgrey;*/
 }
 
-/*.anim0 {
+.anim0 {
   animation: blink 3s infinite;
   animation-timing-function: steps(3, jump-none);
 }
@@ -216,7 +216,7 @@ marquee {
 .anim5 {
   animation: blink 1.4s infinite;
   animation-timing-function: steps(3, jump-none);
-}*/
+}
 
 
 

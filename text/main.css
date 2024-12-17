@@ -111,6 +111,17 @@ figcaption {
 	font-weight: bold;
 }
 
+.number {
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Arial Black";
+  background: black;
+  color: white;
+  margin-right: 0.35rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 #title {
 	padding: 5px;
   position: absolute;
