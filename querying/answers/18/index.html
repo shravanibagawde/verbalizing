@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>18</title>
+</head>
+<body>
+		<a class="link" style="
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        z-index: -10;
+        font-size: 1vw;
+        font-family: Neue Haas Unica Pro, sans-serif;
+		letter-spacing: 0.1em;
+		line-height: 0em;
+		filter: blur(0.75px);
+	" href="../19/index.html">NEXT</a>
+	<div class="block">S: Respond in any way you want <a href="#" class="toggle-footnote" data-footnote="footnote-1"> → </a> <div id="footnote-1" class="footnote">K: Oh no, you’re recording it…<a href="#" class="toggle-footnote" data-footnote="footnote-2"> → </a>
+
+	<div id="footnote-2" class="footnote">S: No, you don’t even need to speak, like I’ll stop recording if you think another way is better. It’s just like, if you say something that’s interesting, I want to catch it.<a href="#" class="toggle-footnote" data-footnote="footnote-3"> → </a>
+
+	<div id="footnote-3" class="footnote">K: For some reason, the way you are framing this question…it’s like...<a href="#" class="toggle-footnote" data-footnote="footnote-4"> → </a>
+
+	<div id="footnote-4" class="footnote">S: Fucking you up?<a href="#" class="toggle-footnote" data-footnote="footnote-5"> → </a>
+
+	<div id="footnote-5" class="footnote">K: Yeah… so now I’m doubting the way you’re asking me…<a href="#" class="toggle-footnote" data-footnote="footnote-6"> → </a></div></div></div></div></div>
+
+	<div id="footnote-6" class="footnote">S: Yeah, I mean that’s a natural part of it. <a href="#" class="toggle-footnote" data-footnote="footnote-7"> → </a>
+
+	<div id="footnote-7" class="footnote">K: Okay, but why are you asking me in this way though? Why can’t you just ask me ‘what does doubt look like?’ or something? <a href="#" class="toggle-footnote" data-footnote="footnote-8"> → </a>
+
+	<div id="footnote-8" class="footnote">S: Yeah, you can take that way too. “What does doubt look like?”, “what does it look like for you specifically?”<a href="#" class="toggle-footnote" data-footnote="footnote-9"> → </a>
+
+	<div id="footnote-9" class="footnote">K: ...<a href="#" class="toggle-footnote" data-footnote="footnote-10"> → </a>
+
+
+	<div id="footnote-10" class="footnote">K: ...<a href="#" class="toggle-footnote" data-footnote="footnote-11"> → </a>
+
+
+	<div id="footnote-11" class="footnote">K: ...<a href="#" class="toggle-footnote" data-footnote="footnote-12"> → </a>
+
+	<div id="footnote-12" class="footnote">K: …I don’t know why but the first thing that comes to mind is faith.<a href="#" class="toggle-footnote" data-footnote="footnote-13"> → </a>
+
+
+	<div id="footnote-13" class="footnote">S: Yeah, that’s a pretty common correlation. <a href="#" class="toggle-footnote" data-footnote="footnote-14"> → </a>
+
+
+	<div id="footnote-14" class="footnote">K: Yeah, but that’s like… yeah... do you want something longer?<a href="#" class="toggle-footnote" data-footnote="footnote-15"> → </a>
+
+
+	<div id="footnote-15" class="footnote">S: No, that’s all then?<a href="#" class="toggle-footnote" data-footnote="footnote-16"> → </a>
+
+	<div id="footnote-16" class="footnote">K: Yeah.
+
+	
+
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const footnoteLinks = document.querySelectorAll(".toggle-footnote");
+
+    footnoteLinks.forEach((link) => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const footnoteId = link.getAttribute("data-footnote");
+            const footnote = document.getElementById(footnoteId);
+
+            if (footnote.style.display === "none" || footnote.style.display === "") {
+                footnote.style.display = "block";
+            } else {
+                footnote.style.display = "none";
+            }
+        });
+    });
+});
+    </script>
+</body>
+</html>

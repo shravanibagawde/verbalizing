@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>19</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+</style>
+<script>
+function imageZoom(imgID, resultID) {
+  var img, lens, result, cx, cy;
+  img = document.getElementById(imgID);
+  result = document.getElementById(resultID);
+  lens = document.createElement("DIV");
+  lens.setAttribute("class", "img-zoom-lens");
+  img.parentElement.insertBefore(lens, img);
+  cx = result.offsetWidth / lens.offsetWidth;
+  cy = result.offsetHeight / lens.offsetHeight;
+  result.style.backgroundImage = "url('" + img.src + "')";
+  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+  lens.addEventListener("mousemove", moveLens);
+  img.addEventListener("mousemove", moveLens);
+  lens.addEventListener("touchmove", moveLens);
+  img.addEventListener("touchmove", moveLens);
+  function moveLens(e) {
+    var pos, x, y;
+    e.preventDefault();
+    /*get the cursor's x and y positions:*/
+    pos = getCursorPos(e);
+    /*calculate the position of the lens:*/
+    x = pos.x - (lens.offsetWidth / 2);
+    y = pos.y - (lens.offsetHeight / 2);
+    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+    if (x < 0) {x = 0;}
+    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+    if (y < 0) {y = 0;}
+    lens.style.left = x + "px";
+    lens.style.top = y + "px";
+    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+  }
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    a = img.getBoundingClientRect();
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+</script>
+</head>
+<body>
+    <a class="link" style="
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        z-index: -10;
+        font-size: 1vw;
+        font-family: Neue Haas Unica Pro, sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 0em;
+    filter: blur(0.75px);
+  " href="../20/index.html">NEXT</a>
+<div class="img-zoom-container">
+  <img id="myimage" src="data_center.jpeg" width="20%" height="15%">
+  <div id="myresult" class="img-zoom-result"></div>
+  <div id="desc">What's wrong with this image?
+  	<textarea></textarea>
+  </div>
+</div>
+
+<script>
+// Initiate zoom effect:
+imageZoom("myimage", "myresult");
+</script>
+
+</body>
+</html>
+
