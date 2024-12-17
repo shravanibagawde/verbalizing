@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>21</title>
+</head>
+<body  onclick="cycleParagraph()">
+		<a class="link" style="
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        z-index: -10;
+        font-size: 1vw;
+        font-family: Neue Haas Unica Pro, sans-serif;
+		letter-spacing: 0.1em;
+		line-height: 0em;
+		filter: blur(0.75px);
+	" href="../22/index.html">NEXT</a>
+	<div class="container">
+		<img id="field" src="https://d2w9rnfcy7mm78.cloudfront.net/33038367/original_d77c67158790bf7daf9344f12a77a5c6.gif?1734409228?bc=0">
+	<div class="lines"></div>
+	</div>
+<script type="text/javascript">
+
+const paragraphs = ["...between what is to come and memory, between the giving and receiving of form.", "Organic matter is like the sculptors clay or marble: it produces its refuse and scraps", "But these organic evacuations are absolutely necessary for the realization of living form...", "...which ultimately appears, in all its density, at the cost of their disappearance.", "Again, this type of destruction in no way contradicts positive plasticity: it is its condition.", "It serves the neatness and power of realized form. In its own way it composes the life force.", "In psychoanalysis, as in neurology, a plastic brain or plastic psyche is one that finds the right balance...", "...between the capacity for change and the aptitude for remaining the same..."];
+
+let currentL = 0;
+
+// Function to cycle through paragraphs
+function cycleParagraph() {
+	const lines = document.querySelector('.lines');
+	currentL = (currentL + 1) % paragraphs.length;
+	lines.textContent = paragraphs[currentL];
+}
+
+cycleParagraph();
+
+    </script>
+</body>
+</body>
+</html>
