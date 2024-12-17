@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>1</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<a class="link" style="
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        z-index: -10;
+        font-size: 1vw;" href="../2/index.html">NEXT</a>
+<div class="string1">It's like a hydra, or a phylogenetic tree.
+</div>
+<div class="string2">It just keeps going.</div> 
+<div id="container">
+	<div class="going" style="display: none;">And going.</div>
+</div>
+<button id="going-button">And?</button>
+<!-- <footer>Sukthi Gunda 09/25/2023</footer> -->
+</body>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function () {
+		const container = document.getElementById("container");
+        const goingButton = document.getElementById("going-button");
+        const elementToShow = document.getElementById("elementToShow");
+        let clickCountOne = 0;
+        let clickCountTwo = 0;
+
+        goingButton.addEventListener("click", function () {
+        const goingNumber = container.querySelectorAll(".going").length;
+        for (let i = 0; i < goingNumber; i++) {
+        const clone = container.querySelector(".going").cloneNode(true);
+                clickCountOne++;
+        if (clickCountOne >= 1) {
+        	clone.style.display = 'block'
+        }
+        clone.style.marginLeft = `${goingNumber * 10}px`;
+        const newContainer = document.createElement('div');
+        newContainer.classList.add("new-container");
+        container.append(newContainer);
+        newContainer.appendChild(clone);
+        
+        clickCountTwo++;
+        if (clickCountTwo === 30) {
+        	nextPage.style.display = 'block'
+        } 
+                }
+            });
+        });
+</script>
+</html>
