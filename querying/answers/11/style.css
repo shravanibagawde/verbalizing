@@ -1,0 +1,43 @@
+html {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-user-select: none;
+  	user-select: none;
+
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica Pro', sans-serif;
+    src: url('assets/NeueHaasUnicaPro-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+a, a:visited, a:active {
+	color: #FFE500;
+	text-decoration: none;
+	transition: 0.10s;
+	cursor: default;
+}
+
+a:hover {
+	filter: blur(1.15px);
+/*	color: black;
+*/	cursor: default;
+}
+
+body {
+	background: url('https://d2w9rnfcy7mm78.cloudfront.net/33038289/original_bbff069f35ebccb9a82401982eaed781.gif?1734408719?bc=0');
+	background-size: cover;
+	color: #FFE500;
+	filter: blur(0.75px);
+}
+
+p {
+	position: absolute;
+	width: 13em;
+	left: 41em;
+	top: 8em;
+	font-size: 1.5vw;
+	font-family: Neue Haas Unica Pro, sans-serif;
+	letter-spacing: 0.1em;
+	line-height: 1.25em;
+}
