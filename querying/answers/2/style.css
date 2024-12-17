@@ -1,0 +1,71 @@
+html {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica Pro', sans-serif;
+    src: url('assets/NeueHaasUnicaPro-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+a, a:visited, a:active {
+	color: #FFE500;
+	text-decoration: none;
+	transition: 0.10s;
+	cursor: default;
+
+}
+
+a:hover {
+	filter: blur(1.15px);
+/*	color: black;
+*/	cursor: default;
+}
+
+body {
+	background: black;
+	color: #FFE500;
+	padding: 1em;
+	font-family: Neue Haas Unica Pro, sans-serif;
+	letter-spacing: 0.1em;
+	line-height: 0em;
+	filter: blur(0.75px);
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	grid-gap: 20px;
+	margin-top: 2em;
+}
+
+.para1, .para2, .para3 {
+	font-size: 1.5em;
+	font-family: Neue Haas Unica Pro, sans-serif;
+	letter-spacing: 0.1em;
+	line-height: 0em;
+	filter: blur(0.75px);
+	width: 50px;
+}
+
+/*#special {
+	color: white;
+}*/
+
+.num {
+	padding-bottom: 0.5em;
+}
+
+
+.para-unravel {
+	-webkit-animation: unravel 20s forwards 1;
+    animation: unravel 20s forwards 1;
+
+}
+
+@keyframes unravel {
+    100% {line-height: 3em; letter-spacing: 0.2em; width: 33%;}
+}
