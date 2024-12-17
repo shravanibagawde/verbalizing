@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>17</title>
+</head>
+<body>
+		<a class="link" style="
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        z-index: -10;
+        font-size: 1vw;
+        font-family: Neue Haas Unica Pro, sans-serif;
+		letter-spacing: 0.1em;
+		line-height: 0em;
+		filter: blur(0.75px);
+	" href="../18/index.html">NEXT</a>
+	<div class="container1">
+	<a href="#" id="toggle1" class="toggle-footnote" data-footnote="footnote-1">●</a> 
+	<div id="footnote-1" class="footnote">Satellite images are not just scientific; they are cultural as well. Remote-sensing satellites are equipped with multispectral sensors that detect phenomena across parts of the electromagnetic spectrum. These instruments sense chemical traces in the troposphere and stratosphere based on the reflective or absorptive properties of those chemicals.</div>
+	</div>
+
+	<div class="container2">
+	<a href="#" id="toggle2" class="toggle-footnote" data-footnote="footnote-2">●</a> 
+	<div id="footnote-2" class="footnote">Traces are captured as sensor data and transmitted to earth stations. There, the data are processed, calibrated, and rendered so that they can be intelligible and readable as satellite imagery. This imagery is then scaled, colorized, and overlaid with graphics that identify phenomena of interest. This “disaster media” formation is highly processed and designed to spotlight phenomena and relations that are invisible to the human eye.</div>
+	</div>
+
+	<div class="container3">
+	<a href="#" id="toggle3" class="toggle-footnote" data-footnote="footnote-3">●</a> 
+	<div id="footnote-3" class="footnote">The fading, semitransparent pixels above a given city—graphic additions to satellite imagery—while informative in many respects, are legible only in the broader contexts of media literacy and cultural critique. These renderings also may be thrown into question by subsequent satellite data or by more nuanced analyses.</div>
+	</div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const footnoteLinks = document.querySelectorAll(".toggle-footnote");
+
+    footnoteLinks.forEach((link) => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const footnoteId = link.getAttribute("data-footnote");
+            const footnote = document.getElementById(footnoteId);
+
+            if (footnote.style.display === "none" || footnote.style.display === "") {
+                footnote.style.display = "block";
+            } else {
+                footnote.style.display = "none";
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>

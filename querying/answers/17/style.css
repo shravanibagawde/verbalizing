@@ -1,0 +1,78 @@
+html {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica Pro', sans-serif;
+    src: url('assets/NeueHaasUnicaPro-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+a, a:visited, a:active {
+	color: #FFE500;
+	text-decoration: none;
+	transition: 0.10s;
+	cursor: default;
+}
+
+a:hover {
+	filter: blur(1.15px);
+	cursor: default;
+}
+
+body {
+	background: url('https://d2w9rnfcy7mm78.cloudfront.net/33038348/original_05fc003f7d5ef18c94ecf7696a4cc965.png?1734409080?bc=0');
+	filter: blur(0.75px);
+	font-family: Neue Haas Unica Pro, sans-serif;
+	color: #FFE500;
+}
+
+
+.footnote {
+  display: none;
+  font-size: 1.25vw;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+  width: 20vw;
+  margin-left: 2em;
+}
+
+.toggle-footnote {
+	text-shadow: 0 0 10px #FFE500;
+	font-size: 2.5vw;
+}
+
+.container1 {
+		position: absolute;
+		left: 20em;
+		top: 5em;
+}
+
+.container2 {
+		position: absolute;
+		left: 43em;
+		top: 12em;
+}
+
+.container3 {
+		position: absolute;
+		left: 50em;
+		top: 8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
