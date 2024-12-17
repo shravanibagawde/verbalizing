@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>14</title>
+</head>
+<body>
+        <a class="link" style="
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        z-index: -10;
+        font-size: 1vw;
+        font-family: Neue Haas Unica Pro, sans-serif;
+        letter-spacing: 0.1em;
+        line-height: 0em;
+        filter: blur(0.75px);
+    " href="../15/index.html">NEXT</a>
+<div class="block">It is to stop and think and read between each line. It’s like a latent space <a href="#" class="toggle-footnote" data-footnote="footnote-1"> ⓵ </a> 
+	<div id="footnote-1" class="footnote">Latent doesn’t really make sense; it can surely make itself visible many times.</div> 
+between certainty and ignorance <a href="#" class="toggle-footnote" data-footnote="footnote-2"> ⓶ </a> 
+	<div id="footnote-2" class="footnote">Maybe ignorance is too harsh of a word; perhaps, unawareness instead. </div>
+<a href="#" class="toggle-footnote" data-footnote="footnote-3"> ⓷ </a>
+	<div id="footnote-3" class="footnote">Or maybe ignorance does signify the role of choice. 
+	</div>
+It feels positive sometimes, almost like a comfort<a href="#" class="toggle-footnote" data-footnote="footnote-4"> ⓸ </a>
+	<div id="footnote-4" class="footnote">Does this comes with years of using it as a tool of some sort?</div>
+but also extremely immobilizing other times; it’s inherently contradictory <a href="#" class="toggle-footnote" data-footnote="footnote-5"> ⓹ </a>
+	<div id="footnote-5" class="footnote">Viewing it in such a binary sense seems counterintuitive. It’s more like a state of flux.</div>
+</div>
+
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const footnoteLinks = document.querySelectorAll(".toggle-footnote");
+
+    footnoteLinks.forEach((link) => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const footnoteId = link.getAttribute("data-footnote");
+            const footnote = document.getElementById(footnoteId);
+
+            if (footnote.style.display === "none" || footnote.style.display === "") {
+                footnote.style.display = "inline-block";
+            } else {
+                footnote.style.display = "none";
+            }
+        });
+    });
+});
+    </script>
+</body>
+</html>
