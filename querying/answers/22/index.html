@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>22</title>
+</head>
+<body>
+        <a class="link" style="
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        z-index: -10;
+        font-size: 1vw;
+        font-family: Neue Haas Unica Pro, sans-serif;
+        letter-spacing: 0.1em;
+        line-height: 0em;
+        filter: blur(0.75px);
+    " href="../23/index.html">NEXT</a>
+<script type="text/javascript">
+console.log('Click anywhere')
+
+	const ridhaWords = [
+            "I don’t know",
+            "It has a lot to with the way I respond to those around me",
+            "I tell myself to walk into every room like a white man would",
+            "I'm not sure if this is making sense",
+            "I feel like I can’t afford to"
+        ];
+
+ 
+        function placeRidhaWords(event) {
+            const randomWord = Math.floor(Math.random() * ridhaWords.length);
+            const ridhaWord = ridhaWords[randomWord];
+
+            const body = document.body;
+            const randomDiv = document.createElement("div");
+            randomDiv.className = "random-word";
+            randomDiv.textContent = ridhaWord;
+
+            const x = event.clientX - body.getBoundingClientRect().left;
+            const y = event.clientY - body.getBoundingClientRect().top;
+
+            randomDiv.style.left = `${x}px`;
+            randomDiv.style.top = `${y}px`;
+
+            body.appendChild(randomDiv);
+        }
+
+        document.addEventListener("click", placeRidhaWords);
+</script>
+</body>
+</html>
