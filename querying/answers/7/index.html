@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>7</title>
+</head>
+<body>
+			<a class="link" style="
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        z-index: -10;
+        font-size: 1vw;
+        font-family: Neue Haas Unica Pro, sans-serif;
+		letter-spacing: 0.1em;
+		line-height: 0em;
+		filter: blur(0.75px);
+	" href="../8/index.html">NEXT</a>
+	<div class="container">
+	<div class="question1">
+	Suppose [a person] had a basket full of apples and, being worried that some of the apples were rotten, wanted to take out the rotten ones to prevent the rot spreading. How would he proceed?</div>
+  <form class="options">
+    <label>
+      <input type="radio" name="color" value="v1" onchange="showResponse(this)">He would begin by tipping the whole lot out of the basket.
+    </label>
+    <label>
+      <input type="radio" name="color" value="v2" onchange="showResponse(this)">He would begin by removing each apple one by one.
+    </label>
+    <label>
+      <input type="radio" name="color" value="v3" onchange="showResponse(this)">He would refrain from doing anything.
+    </label>
+    <div id="response"></div>
+    <button id="proceed">Proceed</button>
+  </form>
+  </div>
+
+  <script>
+    function showResponse(radio) {
+      var selectedValue = radio.value;
+      var responseElement = document.getElementById("response");
+
+      if (selectedValue === "v1") {
+        responseElement.innerText = "Are you sure about that?";
+      } else if (selectedValue === "v2") {
+        responseElement.innerText = "Do you want to double check?";
+      } else if (selectedValue === "v3") {
+        responseElement.innerText = "Why so?";
+      }
+    }
+  </script>
+</body>
+
+</html>

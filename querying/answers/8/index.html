@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>8</title>
+</head>
+<body  onclick="cycleParagraph()">
+			<a class="link" style="
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        z-index: -10;
+        font-size: 1vw;
+        font-family: Neue Haas Unica Pro, sans-serif;
+		letter-spacing: 0.1em;
+		line-height: 0em;
+		filter: blur(0.75px);
+	" href="../9/index.html">NEXT</a>
+	<div class="container">
+		<img id="field" src="https://d2w9rnfcy7mm78.cloudfront.net/33038254/original_259998e211937d7b4bb74d4769a3f782.gif?1734408382?bc=0">
+	<div class="lines"></div>
+	</div>
+<script type="text/javascript">
+
+const paragraphs = ["…perhaps even simultaneously.", "One feature, the most distinctive of all, pits contemporary civilization against those that have preceded it: speed.", "The metamorphosis occurred in the space of a single generation,’ the historian Marc Bloch noted in the 1930s.", "The situation involves a second feature in turn: the accident.", "The gradual spread of catastrophic events not only affects the reality of the moment but causes anxiety and anguish for generations to come.", "From incidents to accidents, from catastrophes to cataclysms, everyday like has become a kaleidoscope…", "…where we endlessly bang into or run up against what crops up, ex abrupto, out of the blue so to speak.", "And so, in this broken mirror, we need to learn how to clearly make out what crops up more and more frequently…", "...and more to the point, more and more rapidly, in an untimely fashion…"];
+
+let currentL = 0;
+
+// Function to cycle through paragraphs
+function cycleParagraph() {
+	const lines = document.querySelector('.lines');
+	currentL = (currentL + 1) % paragraphs.length;
+	lines.textContent = paragraphs[currentL];
+}
+
+cycleParagraph();
+
+    </script>
+</body>
+</body>
+</html>
