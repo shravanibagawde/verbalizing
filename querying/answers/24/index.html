@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>24</title>
+</head>
+<body onload='randombg()' id="body">
+    <canvas id="myCanvas"></canvas>
+            <a class="link" style="
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        z-index: -10;
+        font-size: 1vw;
+        font-family: Neue Haas Unica Pro, sans-serif;
+        letter-spacing: 0.1em;
+        line-height: 0em;
+        filter: blur(0.75px);
+    " href="../25/index.html">NEXT</a>
+
+    <script>
+
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('myCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.canvas.width = window.innerWidth;
+            ctx.canvas.height = window.innerHeight;
+          
+
+            canvas.addEventListener('click', drawEllipse);
+
+            function drawEllipse(event) {
+                const x = event.clientX - canvas.getBoundingClientRect().left;
+                const y = event.clientY - canvas.getBoundingClientRect().top;
+                let w = canvas.getBoundingClientRect().width;
+                let h = canvas.getBoundingClientRect().height;
+                w = Math.random() * 140 + 10;;
+                h = Math.random() * 140 + 10;;
+
+                ctx.beginPath();
+                ctx.ellipse(x, y, w, h, Math.PI * 2, 0, 2 * Math.PI);
+                ctx.strokeStyle = '#FFE500';
+                ctx.lineWidth = 5;
+                ctx.stroke();
+                ctx.closePath();
+            }
+        });
+    </script>
+</body>
+</html>
