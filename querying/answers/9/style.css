@@ -1,0 +1,84 @@
+html {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica Pro', sans-serif;
+    src: url('assets/NeueHaasUnicaPro-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+a, a:visited, a:active {
+	color: #FFE500;
+	text-decoration: none;
+	transition: 0.10s;
+	cursor: default;
+}
+
+a:hover {
+	filter: blur(1.15px);
+/*	color: black;
+*/	cursor: default;
+}
+
+body {
+	background: black;
+	padding: 1em;
+	position: relative;
+	filter: blur(0.75px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+textarea {
+	width: 100%;
+	height: 20%;
+	margin-top: 5%;
+	border: 2px solid #FFE500;
+    font-family: Neue Haas Unica Pro, sans-serif;
+    color: #FFE500;
+    font-size: 0.75em;
+	letter-spacing: 0.1em;
+    line-height: 1em;
+    outline: none;
+    padding: 10px;
+    background-color: black;
+}
+
+#desc {
+	font-size: 1.35vw;
+	position: relative;
+	color: #FFE500;
+	font-family: Neue Haas Unica Pro, sans-serif;
+	letter-spacing: 0.1em;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.img-zoom-container {
+  position: relative;
+  display: flex;
+  gap: 3%;
+  margin: auto;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 2px solid #FFE500;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  border: 2px solid #FFE500;
+  /*set the size of the result div:*/
+  width: 42vw;
+  height: 42vw;
+}
