@@ -1,6 +1,15 @@
+html {
+	background: white;
+}
+
 *::-webkit-scrollbar {
 	display: none;
     width: 0 !important;
+}
+
+::selection {
+  color: white;
+  background: black;
 }
 
 @font-face {
@@ -20,13 +29,14 @@ body {
 }
 
 a, a:visited {
-  color: black;
   text-decoration: none;
+  color: black;
+  transition: 0.2s;
 }
 
 a:hover {
-	color: white;
-	background: #04CB08;
+	text-decoration: none;
+	color: #04CB08;
 }
 
 #entry-box {
@@ -78,13 +88,13 @@ a:hover {
   font-size: 0.9em;
   overflow-x: hidden;
   overflow-y: hidden;
-  font-family: "Arial Narrow";
+  font-family: "Times New Roman";
 }
 
 .tab {
 	padding-top: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 #sections {
@@ -107,7 +117,7 @@ a:hover {
   border-top: 1px solid black;
 }
 
-#notes, #citation {
+#log, #citation {
   grid-column: 2;
 }
 
@@ -115,10 +125,10 @@ a:hover {
   padding: 20px;
   font-family: "Times New Roman";
   font-size: 0.9em;
-
 }
 
 #contents {
+	height: 93%;
   padding: 20px;
   border: 1px solid black;
 }
@@ -134,13 +144,13 @@ a:hover {
 }
 
 #log {
-	width: 100%;
-	height: 103.5%;
-	border: solid 1px black;
+	padding: 20px;
+	border: 0;
+	width: 95%;
 }
 
 
-#intro, #log {
+#intro, #contents {
   border-right: 1px solid black;
   grid-column: 1;
 }
@@ -168,14 +178,16 @@ table {
   width: 100%;
   color: black;
   background-color: white;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 #contents table, th, td {
-  border: 1px solid black;
+  border: 1px dashed black;
 }
 
 #contents table {
-  bottom: 20
+  bottom: 20;
 }
 
 #contents thead {
@@ -191,7 +203,16 @@ th {
 
 td {
   padding: 10px;
-  min-width:  6rem;
+  min-width:  2rem;
+  max-width: 4rem;
+}
+
+/*#row2:hover, #row3:hover, #row4:hover, #row5:hover, #row6:hover {
+	background: #F5F5F5;
+}*/
+
+img, video {
+	width: 100%;
 }
 
 
@@ -256,11 +277,12 @@ td {
     border-right: 0px;
   }
 
-  #notes {
+  #contents {
     grid-row: 2;
   }
 
   #log {
+  	grid-row: 4;
     border-right: 0px;
   }
 
