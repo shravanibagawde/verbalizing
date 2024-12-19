@@ -1,0 +1,209 @@
+*::-webkit-scrollbar {
+	display: none;
+    width: 0 !important;
+}
+
+@font-face {
+  font-family: "Arial Black";
+  font-style: normal;
+  src: url("../assets/arialmtblack.ttf")
+}
+
+@font-face {
+  font-family: "Arial Narrow";
+  font-style: normal;
+  src: url("../assets/arialmtnarrow.ttf")
+}
+
+body {
+	margin: 0px;
+}
+
+#entry-box {
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	padding-left: 0.45em;
+	padding-right: 0.45em;
+	z-index: 100;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	margin:0 auto;
+	color: black;
+	background: white;
+	border: 0.75px solid black;
+}
+
+#entry-box:active, #entry-box:hover {
+	color: white;
+	background: #04CB08;
+}
+
+#wrapper {
+	width: 100%;
+}
+
+#header {
+  width: 100vw;
+  height: 20px;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Arial Narrow";
+}
+
+#footer {
+  width: 100vw;
+  height: 20px;
+  position: fixed;
+  bottom: 0px;
+  background-color: white;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Arial Narrow";
+}
+
+.track {
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 180s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+#sections {
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  grid-template-rows: repeat(2, 48vh);
+  margin-top: 20px;
+}
+
+.section {
+  vertical-align: top;
+  padding: 20px;
+  position: relative;
+  overflow: scroll;
+}
+
+.top {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+#notes, #citation {
+  grid-column: 2;
+}
+
+#intro {
+
+}
+
+#notes {
+}
+
+#citation {
+}
+
+#log {
+}
+
+
+#intro, #log {
+  border-right: 1px solid black;
+  grid-column: 1;
+}
+
+
+
+/*SLIPS*/
+
+#detail-slip{
+	position: absolute;
+	width: 18.5%;
+	filter: saturate(1.5);
+}
+
+#glitch-slip {
+	position: absolute;
+	width: 29%;
+	filter: saturate(1.5);
+}
+
+#query-slip {
+	position: absolute;
+	width: 19%;
+	filter: saturate(1.5);
+}
+
+#void-slip {
+	position: absolute;
+	width: 20%;
+	filter: saturate(1.5);
+}
+
+.slip {
+	z-index: 99;
+	cursor: grab;
+}
+
+.slip:active {
+	cursor: grabbing;
+}
+
+@media all and (max-width: 850px) {
+
+  #sections {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    position: relative;
+  }
+
+  .slip {
+    display: none;
+  }
+
+  .section {
+    display: inline-block;
+  }
+
+  #intro {
+    grid-row: 1;
+    border-top: 1px solid white;
+    border-right: 0px;
+  }
+
+  #notes {
+    grid-row: 2;
+  }
+
+  #log {
+    border-right: 0px;
+  }
+
+  #citation {
+    grid-row: 3;
+  }
+
+  #notes, #citation {
+    grid-column: 1;
+  }
+}

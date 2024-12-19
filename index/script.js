@@ -1,10 +1,3 @@
- $(function () {
-        $(".slip").draggable({            
-            stack: ".slip"
-        });
-    });
-
-
 function animateTitle() {
 i >= message.length - 1 ? (i = 0) : i++,
 (document.title = message[i]),
@@ -15,25 +8,19 @@ var message = [
 'Verbalizing..', 'Verbalizing...', 'Verbalizing..', 'Verbalizing.', 'Verbalizing']
 i = 0
 animateTitle()
-
-function openResizedWindow(url, width, height, left, top) {
-    var options = "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top;
-    window.open(url, "", options);
-}
-
-
+ 
+$(function () {
+        $(".slip").draggable({            
+            stack: ".slip"
+        });
+    });
 
 function getRandomNumber(min, max) { 
-	return Math.floor(Math.random() * (max - min)/5) *5 + min;   
+    return Math.floor(Math.random() * (max - min)/5) *5 + min;   
 }
 
 let winWidth = document.body.clientWidth;
 let winHeight = document.body.clientHeight;
-
-bgLeft = getRandomNumber(-100, 100);
-bgTop = getRandomNumber(-100, 100);
-
-document.body.style.backgroundPosition = `${bgLeft}% ${bgTop}%`
 
 let slip1 = document.querySelector('.slip1')
 let slip2 = document.querySelector('.slip2')

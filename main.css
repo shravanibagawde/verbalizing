@@ -1,6 +1,11 @@
+  @font-face {
+  font-family: "Arial Black";
+  font-style: normal;
+  src: url("../assets/arialmtblack.ttf")
+}
+
 body {
-	background-image: url("assets/main-text-new.png");
-	background-repeat: no-repeat;
+	background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)), url("assets/main-text-new.png");
 	background-size: 145%;
 	background-position: 89% 42.5%;
 	font-size: 1.05em;
@@ -18,24 +23,42 @@ a:hover {
 	color: red;
 }
 
-#detail-slip, #query-slip, #glitch-slip, #void-slip{
+.a-black {
+	font-family: "Arial Black";
+	font-size: 1em;
+	letter-spacing: -0.015em;
+	line-height: 1em;
+}
+
+#entry-box {
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	padding-left: 0.45em;
+	padding-right: 0.45em;
+	z-index: 100;
 	position: absolute;
-	width: 20%;
-	filter: saturate(1.5);
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	margin:0 auto;
+	background: black;
+	color: white;
+	border: 0.75px solid white;
+	animation: blink 1s infinite;
+  animation-timing-function: steps(2, jump-none);
+/*    box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23);
+*/}
+
+#entry-box:active, #entry-box:hover {
+	color: white;
+	background: #04CB08;
 }
 
-#glitch-slip {
-	position: absolute;
-	width: 25%;
-	filter: saturate(1.5);
-}
-
-.slip {
-	cursor: pointer;
-}
-
-.slip:active {
-	cursor: grabbing;
+@keyframes blink {
+  0% { background: limegreen; }
+  100% { background: black;  }
 }
 
 
