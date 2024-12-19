@@ -116,6 +116,7 @@ button {
 }
 
 #asterisk {
+  font-size: 0.75em;
   color: black;
   padding-left: 1em;
   padding-right: 1em;

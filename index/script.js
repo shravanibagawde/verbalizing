@@ -51,3 +51,13 @@ slip4.style.transform = `rotate(${slipRot}deg)`;
 slip4.style.top = getRandomNumber(1, 25) + "vh";
 slip4.style.left = getRandomNumber(1, 80) + "vw";
 
+
+function toggleHide() {
+    const slips = document.querySelector('.slips');
+    slips.classList.toggle('slips');
+    slips.classList.toggle('hide');
+}
+
+const toggleHideSlips = document.getElementById('hide-slips');
+toggleHideSlips.addEventListener('click', toggleHide);
+
