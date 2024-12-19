@@ -1,0 +1,126 @@
+html {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  color: white;
+  background: blue;
+}
+
+@font-face {
+  font-family: "selectricmono-webfont";
+  src: url("selectricmono.otf");
+}
+
+body {
+	background: url(https://upload.wikimedia.org/wikipedia/commons/d/db/V%C3%B5rtsj%C3%A4rv_-_50038643306.gif);
+	background-size: 100%;
+}
+
+*::-webkit-scrollbar {
+	display: none;
+    width: 0 !important;
+}
+
+hr {
+	border: 1.75px solid black;
+	border-style: dashed;
+}
+
+a, a:visited {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.wrapper {
+	position: relative;
+	top: 10vh;
+	align-self: center;
+	width: 35rem;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	max-height: 77.5vh;
+	margin:0 auto;
+	background: white;
+	border: 0.5px solid black;
+    box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23);
+}
+
+.content {
+	font-size: 13px;
+	margin: 2rem;
+	font-weight: 500;
+	letter-spacing: 0.75px;
+	font-family: sans-serif;
+	line-height: 16px;
+}
+
+.desc {
+	font-weight: 200;
+}
+
+.entry {
+	padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1.25px dashed rgba(0,0,0,.5);
+}
+
+summary:hover {
+	text-decoration: underline;
+}
+
+details {
+    padding-bottom: 1rem;
+    border-bottom: 1.25px dashed rgba(0,0,0,.5);	
+}
+
+.grey {
+	color: lightgray;
+}
+
+
+/*Media Queries*/
+@media screen and (min-width: 401px) and (max-width: 599px) {
+    .wrapper {
+    	width: 80vw;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+	body {
+		background: lightblue;
+	}
+.wrapper {
+	position: relative;
+	top: 5vh;
+	align-self: center;
+	width: 80vw;
+	max-height: 85.5vh;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	margin:0 auto;
+	background: white;
+}
+
+.content {
+	font-family: "selectricmono-webfont";
+	font-size: 16px;
+	margin: 2rem;
+	font-weight: 500;
+	letter-spacing: 0.75px;
+	line-height: 20px;
+}
+}
+
+
+
+
+
+
+
+
