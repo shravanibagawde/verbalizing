@@ -32,16 +32,16 @@ a:hover {
 
 #entry-box {
 	text-align: center;
-	font-size: 1.5em;
-	padding-top: 0.25em;
-	padding-bottom: 0.25em;
-	padding-left: 0.45em;
-	padding-right: 0.45em;
+	font-size: 1.25em;
+	padding-top: 0.1em;
+	padding-bottom: 0.07em;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
 	z-index: 100;
 	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
+  top: 50.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 	margin:0 auto;
 	background: black;
 	color: white;

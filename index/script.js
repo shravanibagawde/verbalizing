@@ -33,31 +33,20 @@ slipLeft = getRandomNumber(30, 50);
 
 
 slip1.style.transform = `rotate(${slipRot}deg)`;
-slip1.style.top = getRandomNumber(1, 25) + "vh";
-slip1.style.left = getRandomNumber(1, 80) + "vw";
+slip1.style.top = getRandomNumber(10, 60) + "vh";
+slip1.style.left = getRandomNumber(10, 80) + "vw";
 
 
 slip2.style.transform = `rotate(${slipRot}deg)`;
-slip2.style.top = getRandomNumber(1, 25) + "vh";
-slip2.style.left = getRandomNumber(1, 80) + "vw";
+slip2.style.top = getRandomNumber(10, 60) + "vh";
+slip2.style.left = getRandomNumber(10, 80) + "vw";
 
 
 slip3.style.transform = `rotate(${slipRot}deg)`;
-slip3.style.top = getRandomNumber(1, 25) + "vh";
-slip3.style.left = getRandomNumber(1, 80) + "vw";
+slip3.style.top = getRandomNumber(10, 60) + "vh";
+slip3.style.left = getRandomNumber(10, 80) + "vw";
 
 
 slip4.style.transform = `rotate(${slipRot}deg)`;
-slip4.style.top = getRandomNumber(1, 25) + "vh";
-slip4.style.left = getRandomNumber(1, 80) + "vw";
-
-
-function toggleHide() {
-    const slips = document.querySelector('.slips');
-    slips.classList.toggle('slips');
-    slips.classList.toggle('hide');
-}
-
-const toggleHideSlips = document.getElementById('hide-slips');
-toggleHideSlips.addEventListener('click', toggleHide);
-
+slip4.style.top = getRandomNumber(10, 60) + "vh";
+slip4.style.left = getRandomNumber(10, 80) + "vw";

@@ -1,7 +1,8 @@
 html  {
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 1.75rem;
+  padding: 10px;
+  /*background: yellow;*/
 }
 
 @font-face {
@@ -57,7 +58,7 @@ img {
   display: flex;
   flex-direction: column;
   min-width: 11rem;
-  max-height: 62.5vh;
+  max-height: 75vh;
   overflow-x: scroll;
   gap: 0.5em;
 }
@@ -92,17 +93,21 @@ details {
 
 
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
   background: white;
   font-size: 1.75rem;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  text-align: center;
+  height: 32px;
   border-top: 1.25px dashed rgba(0,0,0,1);
 }
 
-.ref::-webkit-scrollbar, .block-wrapper::-webkit-scrollbar, .show::-webkit-scrollbar{
+.block-wrapper::-webkit-scrollbar, .show::-webkit-scrollbar{
     display: none;
     width: 0 !important;
 }
@@ -113,12 +118,6 @@ button {
   font-size: 0.85em;
   padding: 0;
   cursor: pointer;
-}
-
-#asterisk {s
-  color: black;
-  padding-left: 1em;
-  padding-right: 1em;
 }
 
 .wrapper {
