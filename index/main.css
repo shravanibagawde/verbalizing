@@ -77,17 +77,14 @@ a:hover {
 
 @keyframes marquee {
   from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  to { transform: translateX(-60%); }
 }
 
 #entry-box {
   font-family: 'Times New Roman';
 	text-align: center;
-	font-size: 1.3em;
-	padding-top: 0.1em;
-	padding-bottom: 0.07em;
-	padding-left: 0.25em;
-	padding-right: 0.25em;
+	font-size: 1.5em;
+  padding: 0.1em 0.25em 0.07em 0.25em;
 	z-index: 98;
 	position: absolute;
   top: 50.5%;
@@ -96,12 +93,13 @@ a:hover {
 	margin:0 auto;
 	color: black;
 	background: white;
-	border: 0.75px solid black;
+	border: 1px solid black;
+  transition: 0.2s;
 }
 
 #entry-box:active, #entry-box:hover {
-	color: white;
-	background: #04CB08;
+  color: lightgrey;
+  border: 1px solid lightgrey;
 }
 
 #wrapper {
@@ -150,9 +148,13 @@ a:hover {
 }
 
 #intro {
+  letter-spacing: 0.025rem;
   font-family: "Times New Roman";
-  font-size: 0.9em;
+  font-size: 1.15em;
   border-bottom: 1px solid black;
+  -webkit-text-stroke: 0.025rem black;
+  -moz-text-stroke: 0.025rem black;
+  text-stroke: 0.025rem black;
 }
 
 
@@ -187,18 +189,27 @@ a:hover {
 }
 
 .a-black {
+  letter-spacing: 0rem;
 	font-size: 0.8rem;
 	font-family: "Arial Black";
 	line-height: 0.95rem;
+  -webkit-text-stroke: none;
+  -moz-text-stroke: none;
+  text-stroke: none;
 }
 
 
 table {
+  letter-spacing: 0.025rem;
+  font-family: "Times New Roman";
+  font-size: 1.15em;
+  -webkit-text-stroke: 0.025rem black;
+  -moz-text-stroke: 0.025rem black;
+  text-stroke: 0.025rem black;
   border-collapse: collapse;
   width: 100%;
   color: black;
   background-color: white;
-  text-align: center;
 }
 
 #contents table, th, td {
@@ -206,7 +217,7 @@ table {
 }
 
 #contents table {
-  bottom: 20;
+  bottom: 40;
 }
 
 #contents thead {
@@ -218,6 +229,7 @@ th {
   font-weight: normal;
   text-align: left;
   padding: 20px;
+  text-align: center;
 }
 
 td {
@@ -228,6 +240,7 @@ td {
 
 img, video {
 	width: 100%;
+  filter: grayscale(100%);
 }
 
 
