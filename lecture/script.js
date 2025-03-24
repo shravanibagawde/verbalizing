@@ -16,6 +16,8 @@
 //   window.scrollTo(0, 0);
 // };
 
+//animate title 
+
 
 
 //open info panel
@@ -44,6 +46,22 @@ function typeWriter() {
     i++;
     setTimeout(typeWriter, speed);
   }
+}
+
+function animateTitle() {
+i >= message.length - 1 ? (i = 0) : i++,
+(document.title = message[i]),
+setTimeout('animateTitle()', 300)
+}
+var message = [
+'Verbalizing', 'Verbalizing.',
+'Verbalizing..', 'Verbalizing...', 'Verbalizing..', 'Verbalizing.', 'Verbalizing']
+i = 0
+animateTitle()
+
+function openResizedWindow(url, width, height, left, top) {
+    var options = "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top;
+    window.open(url, "", options);
 }
 
 

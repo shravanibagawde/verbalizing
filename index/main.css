@@ -28,15 +28,20 @@ body {
 	margin: 0px;
 }
 
-a, a:visited {
+a, a:active, a:visited {
   text-decoration: none;
   color: black;
+  -webkit-text-stroke: 0.025rem black;
+  -moz-text-stroke: 0.025rem black;
+  text-stroke: 0.025rem black;
   transition: 0.2s;
 }
 
 a:hover {
-	text-decoration: none;
-	color: #04CB08;
+  color: lightgrey;
+  -webkit-text-stroke: 0.025rem lightgrey;
+  -moz-text-stroke: 0.025rem lightgrey;
+  text-stroke: 0.025rem lightgrey;
 }
 
 #header {
@@ -150,7 +155,7 @@ a:hover {
 #intro {
   letter-spacing: 0.025rem;
   font-family: "Times New Roman";
-  font-size: 1.15em;
+  font-size: 1.05em;
   border-bottom: 1px solid black;
   -webkit-text-stroke: 0.025rem black;
   -moz-text-stroke: 0.025rem black;
@@ -170,20 +175,26 @@ a:hover {
 }
 
 #contents {
-  font-size: 0.9em;
+  font-size: 1.05em;
 }
 
 #log {
-  font-size: 0.9em;
+  letter-spacing: 0.025rem;
+  font-family: "Times New Roman";
+  font-size: 1.05em;
+  border-bottom: 1px solid black;
+  -webkit-text-stroke: 0.025rem black;
+  -moz-text-stroke: 0.025rem black;
+  text-stroke: 0.025rem black;
 }
 
 .number {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-align: center;
   font-family: "Arial Black";
   background: black;
   color: white;
-  margin-right: 0.35rem;
+  margin-right: 0.25rem;
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
@@ -202,7 +213,7 @@ a:hover {
 table {
   letter-spacing: 0.025rem;
   font-family: "Times New Roman";
-  font-size: 1.15em;
+  font-size: 1.05rem;
   -webkit-text-stroke: 0.025rem black;
   -moz-text-stroke: 0.025rem black;
   text-stroke: 0.025rem black;
@@ -233,13 +244,14 @@ th {
 }
 
 td {
-  padding: 10px;
+  padding: 15px;
   min-width:  2rem;
   max-width: 4rem;
 }
 
 img, video {
 	width: 100%;
+  height: auto;
   filter: grayscale(100%);
 }
 
